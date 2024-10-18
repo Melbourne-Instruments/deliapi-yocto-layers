@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+    <remote name="openembedded" fetch="git://git.openembedded.org"/>
+    <remote name="elk" fetch="https://github.com/elk-audio"/>
+    <remote name="qt" fetch="https://github.com/meta-qt5/"/>
+    <remote name="clang" fetch="https://github.com/kraj"/>
+    <remote name="rpi-yocto" fetch="https://github.com/agherzan"/>
+    <remote name="swupdate" fetch="https://github.com/sbabic/"/>
+    <remote name="melbinst" fetch="https://github.com/Melbourne-Instruments"/>
+
+    <default sync-j="4"/>
+
+    <project name="poky" path="layers" remote="yocto" revision="1cefabe0f0a2dd2ca8b6eb83e8e0824b72da941a" upstream="hardknott"/>
+    <project name="meta-openembedded" path="layers/meta-openembedded" remote="openembedded" revision="dc262c52b0b10625bf7a2330e1c4e0fe2d8db6aa" upstream="hardknott"/>
+    <project name="meta-qt5" path="layers/meta-qt5" remote="qt" revision="43f8f539d40070a70fe89136db89bf5bb1dfe7ed" upstream="hardknott"/>
+    <project name="meta-raspberrypi" path="layers/meta-raspberrypi" remote="rpi-yocto" revision="9d372828ba657340a42e31875d2326e5f6753403" upstream="hardknott"/>
+    <project name="meta-swupdate" path="layers/meta-swupdate" remote="swupdate" revision="30df302f6d58ba5ea97cde7d9327591662d3fdad" upstream="hardknott"/>
+
+    <project name="meta-elk" path="layers/meta-elk" remote="elk" revision="9dc5969c9503bdcbc945f89e39c0db3549359bfd" upstream="hardknott"/>
+    <project name="meta-raspberrypi-elk" path="layers/meta-raspberrypi-elk" remote="elk" revision="b7ca94e14e7a047cfddc9b8cf5b550afaa45dd46" upstream="hardknott"/>
+    <project name="meta-elkpi" path="layers/meta-elkpi" remote="elk" revision="8bf8daa990d182a70033228bb5f71ad6bbd6ac63" upstream="hardknott"/>
+
+    <project name="meta-delia" path="layers/meta-delia" remote="melbinst" revision="6ac127f1dc0434c0751d0ebc738ac62466974232"/>
+    <project name="meta-raspberrypi-delia" path="layers/meta-raspberrypi-delia" remote="melbinst" revision="b3bb887d68f9166704e771a621b7251b9a916403"/>
+    <project name="meta-deliapi" path="layers/meta-deliapi" remote="melbinst" revision="b369fa17399493c18d3ddd6257152440d2f9259c"/>    
+    <project name="meta-swupdate-delia" path="layers/meta-swupdate-delia" remote="melbinst" revision="aae5ae5a021bffa2c595d7f10979d4f04e66e01e"/>    
+</manifest>
